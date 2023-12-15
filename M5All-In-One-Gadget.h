@@ -77,21 +77,100 @@
 #define COMMON_BLUEDOT_IMG_PATH "/images/common/blue_number/dot.jpg"
 #define COMMON_BLUEFILLWHITE_IMG_PATH "/images/common/blue_number/fillwhite.jpg"
 
+// TITLE jpg image coordinate
+#define TITLE_X_CRD 0
+#define TITLE_Y_CRD 0
+
 // MENU jpg image coordinate
 #define MENU_WBGT_X_CRD 0
 #define MENU_WBGT_Y_CRD 0
 #define MENU_MUSIC_X_CRD 0
 #define MENU_MUSIC_Y_CRD 50
+#define MENU_MEASURE_X_CRD 0
+#define MENU_MEASURE_Y_CRD 100
+#define MENU_DATE_X_CRD 0
+#define MENU_DATE_Y_CRD 150
+#define COMMON_BUTTON_UP_X_CRD 0
+#define COMMON_BUTTON_UP_Y_CRD 200
+#define COMMON_BUTTON_DECIDE_X_CRD 120
+#define COMMON_BUTTON_DECIDE_Y_CRD 200
+#define COMMON_BUTTON_DOWN_X_CRD 240
+#define COMMON_BUTTON_DOWN_Y_CRD 200
 
 // WBGT jpg image coordinate
+#define WBGT_TEMPERATURE_X_CRD 0
+#define WBGT_TEMPERATURE_Y_CRD 0
+#define WBGT_HUMIDITY_X_CRD 0
+#define WBGT_HUMIDITY_Y_CRD 50
+#define WBGT_T2DIGIT_X_CRD 120
+#define WBGT_T2DIGIT_Y_CRD 0
+#define WBGT_T1DIGIT_X_CRD 153
+#define WBGT_T1DIGIT_Y_CRD 0
+#define WBGT_TDOT_X_CRD 186
+#define WBGT_TDOT_Y_CRD 0
+#define WBGT_T1DECIMAL_X_CRD 220
+#define WBGT_T1DECIMAL_Y_CRD 0
+#define WBGT_DEGREE_X_CRD 253
+#define WBGT_DEGREE_Y_CRD 0
+#define WBGT_H2DIGIT_X_CRD 120
+#define WBGT_H2DIGIT_Y_CRD 50
+#define WBGT_H1DIGIT_X_CRD 153
+#define WBGT_H1DIGIT_Y_CRD 50
+#define WBGT_HDOT_X_CRD 186
+#define WBGT_HDOT_Y_CRD 50
+#define WBGT_H1DECIMAL_X_CRD 220
+#define WBGT_H1DECIMAL_Y_CRD 50
+#define WBGT_PERCENT_X_CRD 253
+#define WBGT_PERCENT_Y_CRD 50
+#define WBGT_NOTICE_X_CRD 0
+#define WBGT_NOTICE_Y_CRD 100
+#define WBGT_BACK_X_CRD	120
+#define WBGT_BACK_Y_CRD	200
 
 // Music jpg image coordinate
+#define MUSIC_NOTICE_X_CRD 0
+#define MUSIC_NOTICE_Y_CRD 0
+#define MUSIC_TITLE_X_CRD 10
+#define MUSIC_TITLE_Y_CRD 120
+#define MUSIC_PLAY_X_CRD 0
+#define MUSIC_PLAY_Y_CRD 200
+#define MUSIC_BACK_X_CRD 120
+#define MUSIC_BACK_Y_CRD 200
+#define MUSIC_NEXT_X_CRD 240
+#define MUSIC_NEXT_Y_CRD 200
+#define MUSIC_STOP_X_CRD 0
+#define MUSIC_STOP_Y_CRD 200
 
 // Measure jpg image coordinate
+#define MEASURE_NOTICE_X_CRD 0
+#define MEASURE_NOTICE_Y_CRD 0
+#define MEASURE_DIGIT3_X_CRD 10
+#define MEASURE_DIGIT3_Y_CRD 100
+#define MEASURE_DIGIT2_X_CRD 53
+#define MEASURE_DIGIT2_Y_CRD 100
+#define MEASURE_DIGIT1_X_CRD 96
+#define MEASURE_DIGIT1_Y_CRD 100
+#define MEASURE_DOT_X_CRD 139
+#define MEASURE_DOT_Y_CRD 100
+#define MEASURE_DECIMAL_X_CRD 182
+#define MEASURE_DECIMAL_Y_CRD 100
+#define MEASURE_CM_X_CRD 240
+#define MEASURE_CM_Y_CRD 100
+#define MEASURE_BACK_X_CRD 120
+#define MEASURE_BACK_Y_CRD 200
 
 // Date jpg image coordinate
+#define DATE_NOTICE_X_CRD 0
+#define DATE_NOTICE_Y_CRD 0
+#define DATE_YYYYMMDD_X_CRD 10
+#define DATE_YYYYMMDD_Y_CRD 100
+#define DATE_HHmmSS_X_CRD 40
+#define DATE_HHmmSS_Y_CRD 150
+#define DATE_BACK_X_CRD 120
+#define DATE_BACK_Y_CRD 200
 
-typedef enum {
+typedef enum
+{
     TITLE,
     MENU,
     WBGT,
@@ -101,20 +180,23 @@ typedef enum {
     DATE
 } State;
 
-typedef enum {
+typedef enum
+{
     ENTRY,
     DO,
     EXIT
 } Action;
 
-typedef enum {
+typedef enum
+{
     MENU_WBGT,
     MENU_MUSIC,
     MENU_MEASURE,
     MENU_DATE
 } FocusState;
 
-typedef enum {
+typedef enum
+{
     SAFE,
     ATTENTION,
     ALERT,
